@@ -1,1 +1,27 @@
+# CUSTOM PLAYBOOK #1 — Invoke 2 modules to automatically update 2 types of servers.
+
+---
+# Task 1
+- name: Update web servers
+  hosts: webservers
+  become: true
+
+  tasks:
+    # - name: Ensure apache is at the latest version
+
+    # - name: Write the apache config file
+
+    # - name: Write the apache config file using mode='0644' from template 
+
+
+
+# Task 2
+- name: Update db servers
+  hosts: databases
+  become: true
+
+  tasks:
+    # - name: Ensure postgresql is at the latest version
+
+    # - name: Ensure that postgresql is started
 
